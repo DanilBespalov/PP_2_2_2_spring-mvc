@@ -6,7 +6,8 @@
     <title>AllCars</title>
 </head>
 <body>
-<div th:each="allCars : ${cars}"></div>
-<p th:text = "${cars}"></p>
+<th:block th:each="allCars : ${cars}">
+    <h1 th:text="${allCars}"></h1>
+</th:block>
 </body>
 </html>
