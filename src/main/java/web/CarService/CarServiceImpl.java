@@ -1,6 +1,6 @@
-package CarService;
+package web.CarService;
 
-import model.Car;
+import web.model.Car;
 import org.springframework.stereotype.Component;
 
 
@@ -9,7 +9,7 @@ import java.util.List;
 
 @Component
 public class CarServiceImpl implements CarService {
-    private int count;
+    private int count = 0;
     List<Car> carList = new ArrayList<>();
 
     {

@@ -1,4 +1,4 @@
-package model;
+package web.model;
 
 
 public class Car {
@@ -43,7 +43,7 @@ public class Car {
     @Override
     public String toString() {
         return "Car{" +
-                "model='" + modelCar + '\'' +
+                "web.model='" + modelCar + '\'' +
                 ", driversName='" + driversName + '\'' +
                 ", seriesCar=" + seriesCar +
                 '}';
