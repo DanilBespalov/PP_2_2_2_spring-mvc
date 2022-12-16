@@ -1,11 +1,10 @@
 package web.controller;
 
+import CarService.CarService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import service.ServiceImpl;
-
 
 
 @Controller
@@ -13,7 +12,7 @@ import service.ServiceImpl;
 public class CarController {
 
     @Autowired
-    private ServiceImpl serviceCar;
+    private CarService serviceCar;
     @GetMapping("/all")
     public String printAllCars(Model model) {
         model.addAttribute("cars", serviceCar.getCarList());
