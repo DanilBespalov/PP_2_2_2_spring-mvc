@@ -14,8 +14,7 @@ public class CarController {
 
     @Autowired
     private ServiceImpl serviceCar;
-
-    @GetMapping
+    @GetMapping("/all")
     public String printAllCars(Model model) {
         model.addAttribute("cars", serviceCar.getCarList());
         return "cars/cars";
